@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #c1bdbd;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+/***************************************************************************************
+****************************** header ************************************************/
+
+header {
+  background-image: url("Assets/0-6190_star-wars-poster-4k-movies-hd-4k-wallpaper.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/********* .container *******/
+
+.container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: #00000074;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.moviemax {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 0 5px;
+}
+
+.moviemax span {
+  display: block;
+  font-size: 50px;
+}
+
+.imageicon img {
+  width: 25px;
+}
+
+.search input {
+  border: 1px solid #f8f7f7;
+  width: 288px;
+  background-color: #ffffff3c;
+  border-radius: 20px;
+  font-size: 35px;
+}
+
+.search img {
+  width: 30px;
+  position: relative;
+  right: 55px;
+  top: 5px;
+}
+
+.category {
+  display: flex;
+}
+
+.popular input,
+.new input {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.popular hr,
+.new hr {
+  margin: 0 10px;
+  width: 90%;
+  border: 1px solid rgba(255, 255, 255, 0.364);
+}
+
+.popular,
+.new {
+  padding: 0 10px;
+}
+
+/********* .whitespace *******/
+
+.whitespace {
+  height: 595px;
+}
+
+/***************************************************************************************
+****************************** main ************************************************/
+
+main hr {
+  width: 50%;
+  border: 1px solid #00000070;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 50px;
+}
+
+/********* .popularshows *******/
+
+.shows {
+  list-style: none;
+  display: flex;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+
+.shows li {
+  margin: 0 0 0 70px;
+  width: 20%;
+}
+
+.image {
+  display: flex;
+}
+
+.hearticon {
+  width: 25%;
+  position: relative;
+  right: 25%;
+  align-self: baseline;
+}
+
+.moviename p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+
+.rating-trailer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating img {
+  align-self: baseline;
+  width: 45px;
+}
+
+.rating p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+.trailer {
+  display: flex;
+  align-items: center;
+  border: 1px solid #707070;
+  border-radius: 10px;
+
+  padding: 0px 20px;
+  align-self: center;
+  background-color: #303030;
+}
+
+.trailer p {
+  color: white;
+  margin-left: 5px;
+}
+
+/***************************************************************************************
+****************************** footer ************************************************/
+
+footer hr {
+  width: 90%;
+  border: 1px solid #00000070;
+}
+
+footer .title .moviemax {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-weight: bolder;
+  margin-left: 90px;
+  font-size: 15px;
+}
+
+footer .title .moviemax span {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 780px) {
+  /***************************************************************************************
+  ****************************** header ************************************************/
+
+  /********* .container *******/
+
+  .title {
+    margin-right: 0;
+  }
+
+  .moviemax {
+    margin: 0 0 0 5px;
+    font-size: 10px;
+  }
+
+  .moviemax span {
+    font-size: 25px;
+  }
+
+  .imageicon img {
+    width: 15px;
+  }
+
+  .search {
+    margin: 0 0 0 25px;
+  }
+
+  .search input {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .search img {
+    display: none;
+  }
+
+  .popular,
+  .new {
+    padding: 0;
+  }
+
+  .popular input,
+  .new input {
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .popular hr,
+  .new hr {
+    margin: 0 5px;
+    width: 85%;
+  }
+
+  /********* .whitespace *******/
+
+  .whitespace {
+    height: 123px;
+  }
+
+  /***************************************************************************************
+  ****************************** main ************************************************/
+
+  h1 {
+    font-size: 35px;
+  }
+
+  /********* .popularshows *******/
+
+  .shows {
+    margin: 30px 10px;
+    padding: 0;
+    justify-content: flex-start;
+  }
+
+  .shows li {
+    margin: 0 20px;
+    width: 20%;
+    height: 190px;
+  }
+
+  .shows .image {
+    height: 110px;
+  }
+
+  .moviename {
+    width: 100%;
+    height: 30px;
+  }
+
+  .moviename p {
+    font-size: 10px;
+    margin: 0;
+  }
+
+  .rating-trailer {
+    justify-content: right;
+    margin: 0 90px;
+  }
+
+  .rating img {
+    width: 25px;
+  }
+
+  .rating p {
+    font-size: 10px;
+    margin-right: 5px;
+  }
+
+  .trailer {
+    width: 50px;
+    margin-right: 66%;
+    padding: 0 10px;
+    height: 20px;
+  }
+
+  .trailer img {
+    width: 25%;
+  }
+
+  .trailer p {
+    margin: 0 0 0 2px;
+    font-size: 8px;
+  }
+
+  /***************************************************************************************
+  ****************************** footer ************************************************/
+
+  footer .title {
+    margin-right: 0;
+  }
+
+  footer .title .moviemax {
+    margin-left: 20px;
+    font-size: 10px;
+  }
+
+  footer .title .moviemax span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 516px) and (max-width: 600px) {
+  /***************************************************************************************
+  ****************************** header ************************************************/
+
+  /********* .whitespace *******/
+
+  .whitespace {
+    height: 192px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 700px) {
+  /***************************************************************************************
+  ****************************** header ************************************************/
+
+  /********* .whitespace *******/
+
+  .whitespace {
+    height: 233px;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 780px) {
+  /***************************************************************************************
+  ****************************** header ************************************************/
+
+  /********* .whitespace *******/
+
+  .whitespace {
+    height: 282px;
+  }
+}
+
+@media screen and (min-width: 781px) and (max-width: 900px) {
+  /***************************************************************************************
+  ****************************** header ************************************************/
+
+  /********* .container *******/
+
+  .title {
+    margin-right: 0;
+  }
+
+  .moviemax {
+    margin: 0 0 0 5px;
+    font-size: 10px;
+  }
+
+  .moviemax span {
+    font-size: 25px;
+  }
+
+  .imageicon img {
+    width: 15px;
+  }
+
+  .search {
+    margin: 0 0 0 25px;
+  }
+
+  .search input {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .search img {
+    display: none;
+  }
+
+  .popular,
+  .new {
+    padding: 0;
+  }
+
+  .popular input,
+  .new input {
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .popular hr,
+  .new hr {
+    margin: 0 5px;
+    width: 85%;
+  }
+
+  /********* .whitespace *******/
+
+  .whitespace {
+    height: 273px;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 999px) {
+  /***************************************************************************************
+  ****************************** header ************************************************/
+
+  /********* .whitespace *******/
+
+  .whitespace {
+    height: 333px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  /***************************************************************************************
+  ****************************** header ************************************************/
+
+  /********* .whitespace *******/
+
+  .whitespace {
+    height: 380px;
+  }
+}
